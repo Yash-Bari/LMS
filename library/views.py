@@ -9,7 +9,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth import logout
 
 class CustomLoginView(LoginView):
-    template_name = 'library/login.html'  # Specify the template name for the login form
+    template_name = 'registration/login.html'  # Specify the template name for the login form
     success_url = reverse_lazy('home')  # Redirect to the home page after successful login
 
 def custom_logout(request):
